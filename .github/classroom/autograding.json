@@ -84,25 +84,6 @@
     },
     {
       "specs": {
-        "title": "Hervorhebung der 3x3-Quadrate",
-        "list": [
-          "Erstelle eine Hervorhebung der 3x3-Quadrate für die rechten Seite der 3x3-Quadrate, indem du die border-right-Eigenschaft (3px solid #000) für die dritte Zelle in jeder Zeile festlegen",
-          "Erstelle eine Hervorhebung der 3x3-Quadrate für die unteren Seite der 3x3-Quadrate, indem du die border-bottom-Eigenschaft (3px solid #000) für die dritte Zelle in jeder Zeile festlegen"
-        ]
-      },
-      "name": "Please add a highlighting for every third cell",
-      "feedback": "Please add a hightlighting for every third cell. ",
-      "urls": [
-        "https://www.w3schools.com/css/css_howto.asp"
-      ],
-      "file": "sudoku.html",
-      "javascript": "(function() { const rightBorderMatch = Array.from(document.querySelectorAll('#sudoku-grid td:nth-child(3n + 3)')).every(cell => getComputedStyle(cell).getPropertyValue('border-right') === '3px solid rgb(0, 0, 0)'); const bottomBorderMatch = Array.from(document.querySelectorAll('#sudoku-grid tr:nth-child(3n + 3) td')).every(cell => getComputedStyle(cell).getPropertyValue('border-bottom') === '3px solid rgb(0, 0, 0)'); return rightBorderMatch && bottomBorderMatch ? 'true' : 'false'; })();",
-      "output": "true",
-      "comparison": "exact",
-      "points": 20
-    },
-    {
-      "specs": {
         "title": "Style die Zellen im Grid",
         "list": [
           "Setze die Breite und Höhe jeweils auf 30px",
