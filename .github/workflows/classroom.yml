@@ -16,6 +16,14 @@ jobs:
     runs-on: ubuntu-latest
     if: "! contains(github.event.head_commit.message, 'Automatic setup') || github.actor != 'github-classroom[bot]'"
     steps:
+      - name: Cache Puppeteer
+        uses: actions/cache@v2
+        with:
+          path: /home/runner/.npm
+          key: puppeteer-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            puppeteer-${{ runner.os }}-
+            puppeteer-
       - name: Install puppeteer
         run: |
           npm install -g puppeteer
