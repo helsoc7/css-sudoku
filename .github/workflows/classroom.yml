@@ -19,8 +19,7 @@ jobs:
       - name: Install puppeteer
         run: |
           npm install -g puppeteer
-          sudo apt-get update
-          sudo apt-get install -yq libnss3-dev libatk-bridge2.0-0 libgtk-3-0
+          node node_modules/puppeteer/install.mjs
           google-chrome --version
       - uses: actions/checkout@v4
       - uses: GittyBitch/autograding@feature/feedback
