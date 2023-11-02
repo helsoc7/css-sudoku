@@ -96,7 +96,7 @@
         "https://www.w3schools.com/css/css_howto.asp"
       ],
       "file": "sudoku.html",
-      "javascript": "(function() { const cellsWithRightBorder = document.querySelectorAll('#sudoku-grid td:nth-child(3n + 3)'); const rightBorderMatch = Array.from(cellsWithRightBorder).every(cell => { const cellStyles = getComputedStyle(cell); return cellStyles.getPropertyValue('border-right') === '3px solid rgb(0, 0, 0)'; }); const cellsWithBottomBorder = document.querySelectorAll('#sudoku-grid tr:nth-child(3n + 3) td'); const bottomBorderMatch = Array from(cellsWithBottomBorder).every(cell => { const cellStyles = getComputedStyle(cell); return cellStyles.getPropertyValue('border-bottom') === '3px solid rgb(0, 0, 0)'; }); return rightBorderMatch && bottomBorderMatch ? 'true' : 'false'; })();",
+      "javascript": "(function() { const rightBorderMatch = Array.from(document.querySelectorAll('#sudoku-grid td:nth-child(3n + 3)')).every(cell => getComputedStyle(cell).getPropertyValue('border-right') === '3px solid rgb(0, 0, 0)'); const bottomBorderMatch = Array.from(document.querySelectorAll('#sudoku-grid tr:nth-child(3n + 3) td')).every(cell => getComputedStyle(cell).getPropertyValue('border-bottom') === '3px solid rgb(0, 0, 0)'); return rightBorderMatch && bottomBorderMatch ? 'true' : 'false'; })();",
       "output": "true",
       "comparison": "exact",
       "points": 20
