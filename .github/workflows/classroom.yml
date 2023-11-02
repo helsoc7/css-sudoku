@@ -19,5 +19,6 @@ jobs:
       - name: Install puppeteer
         run: |
           npm install -g puppeteer
+          google-chrome --version
       - uses: actions/checkout@v4
       - uses: GittyBitch/autograding@feature/feedback
