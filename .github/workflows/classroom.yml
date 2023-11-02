@@ -18,8 +18,13 @@ jobs:
     steps:
       - name: Install puppeteer
         run: |
+          sudo apt-get update
+          sudo apt-get install -y chromium-browser
           npm install -g puppeteer
-          node node_modules/puppeteer/install.mjs
+          PUPPETEER_VERSION=$(npm list puppeteer --depth=0)
+          echo "Puppeteer Version: $PUPPETEER_VERSION"
+          CHROMIUM_VERSION=$(chromium-browser --version)
+          echo "Chromium Version: $CHROMIUM_VERSION"
           google-chrome --version
       - uses: actions/checkout@v4
       - uses: GittyBitch/autograding@feature/feedback
