@@ -19,7 +19,7 @@ jobs:
       - name: Cache Puppeteer
         uses: actions/cache@v2
         with:
-          path: /home/runner/.npm
+          path: /home/runner/.cache/puppeteer
           key: puppeteer-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             puppeteer-${{ runner.os }}-
