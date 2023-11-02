@@ -1,5 +1,5 @@
 {
-  "repo": "helsoc7/htmldoku",
+  "repo": "helsoc7/css-sudoku",
   "introduction": "Eure Aufgabe ist es, eine HTML-Datei namens sudoku.html zu erstellen mit einer HTML Tabelle für das Spielfeld.",
   "logo_url": "sudoku.png",
   "timeframe": "45 Minuten (Viel Erfolg!)",
@@ -14,7 +14,9 @@
       },
       "name": "Style the sudoku with CSS",
       "feedback": "Please add a stylesheet in the sudoku.html file",
-      "urls": ["https://www.w3schools.com/css/css_howto.asp"],
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { return document.querySelector('link[href=\"timetable.css\"]') !== null ? 'true' : 'false'; })()",
       "output": "true",
@@ -32,7 +34,9 @@
       },
       "name": "Style the body of the sudoku page",
       "feedback": "please add the font to arial or sans-serif, center the text and color the background in #f0f0f0",
-      "urls": [""],
+      "urls": [
+        ""
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { const bodyStyles = window.getComputedStyle(document.body); const fontFamily = bodyStyles.getPropertyValue('font-family').toLowerCase(); const textAlign = bodyStyles.getPropertyValue('text-align').toLowerCase(); const backgroundColor = bodyStyles.getPropertyValue('background-color').toLowerCase(); const fontFamilyMatch = fontFamily.includes('arial') || fontFamily.includes('sans-serif'); const textAlignMatch = textAlign === 'center'; const backgroundColorMatch = backgroundColor === 'rgb(240, 240, 240)' || backgroundColor === '#f0f0f0'; return fontFamilyMatch && textAlignMatch && backgroundColorMatch ? 'true' : 'false'; })()",
       "output": "true",
@@ -49,7 +53,9 @@
       },
       "name": "Style the sudoku with CSS",
       "feedback": "Please add a stylesheet in the sudoku.html file",
-      "urls": ["https://www.w3schools.com/css/css_howto.asp"],
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { const sudokuGrid = document.querySelector('#sudoku-grid'); const computedStyles = getComputedStyle(sudokuGrid); const marginMatch = computedStyles.getPropertyValue('margin') === '0px'; return marginMatch ? 'true' : 'false'; })();",
       "output": "true",
@@ -67,7 +73,9 @@
       },
       "name": "Style the sudoku with CSS",
       "feedback": "Please add a stylesheet in the sudoku.html file",
-      "urls": ["https://www.w3schools.com/css/css_howto.asp"],
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { const sudokuGrid = document.querySelector('#sudoku-grid td'); const computedStyles = getComputedStyle(sudokuGrid); const borderMatch = computedStyles.getPropertyValue('border') === '1px solid rgb(0,0,0)'; const widthMatch = computedStyles.getPropertyValue('border') === '36px'; const heightMatch = computedStyles.getPropertyValue('height') === '34px'; const alignMatch = computedStyles.getPropertyValue('text-align') === 'center'; return alignMatch && heightMatch ? 'true' : 'false'; })();",
       "output": "true",
@@ -84,7 +92,9 @@
       },
       "name": "Please add a highlighting for every third cell",
       "feedback": "Please add a hightlighting for every third cell. ",
-      "urls": ["https://www.w3schools.com/css/css_howto.asp"],
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { const cellsWithRightBorder = document.querySelectorAll('#sudoku-grid td:nth-child(3n + 3)'); const rightBorderMatch = Array.from(cellsWithRightBorder).every(cell => { const cellStyles = getComputedStyle(cell); return cellStyles.getPropertyValue('border-right') === '3px solid rgb(0, 0, 0)'; }); const cellsWithBottomBorder = document.querySelectorAll('#sudoku-grid tr:nth-child(3n + 3) td'); const bottomBorderMatch = Array from(cellsWithBottomBorder).every(cell => { const cellStyles = getComputedStyle(cell); return cellStyles.getPropertyValue('border-bottom') === '3px solid rgb(0, 0, 0)'; }); return rightBorderMatch && bottomBorderMatch ? 'true' : 'false'; })();",
       "output": "true",
@@ -103,7 +113,9 @@
       },
       "name": "Style the sudoku with CSS",
       "feedback": "Please add a stylesheet in the sudoku.html file",
-      "urls": ["https://www.w3schools.com/css/css_howto.asp"],
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { const sudokuCells = document.querySelectorAll('.sudoku-cell'); const stylesMatch = Array.from(sudokuCells).every(cell => { const cellStyles = getComputedStyle(cell); const widthMatch = cellStyles.getPropertyValue('width') === '30px'; const heightMatch = cellStyles.getPropertyValue('height') === '30px'; const textAlignMatch = cellStyles.getPropertyValue('text-align') === 'center'; const fontSizeMatch = cellStyles.getPropertyValue('font-size') === '16px'; const borderMatch = cellStyles.getPropertyValue('border') === '1px solid rgb(0, 0, 0)'; return widthMatch && heightMatch && textAlignMatch && fontSizeMatch && borderMatch; }); return stylesMatch ? 'true' : 'false'; })();",
       "output": "true",
@@ -124,7 +136,9 @@
       },
       "name": "Style the sudoku with CSS",
       "feedback": "Please add a stylesheet in the sudoku.html file",
-      "urls": ["https://www.w3schools.com/css/css_howto.asp"],
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { const checkSolutionButton = document.getElementById('check-solution'); const computedStyles = getComputedStyle(checkSolutionButton); const bgColorMatch = computedStyles.getPropertyValue('background-color') === 'rgb(0, 140, 186)'; const colorMatch = computedStyles.getPropertyValue('color') === 'rgb(255, 255, 255)'; const fontSizeMatch = computedStyles.getPropertyValue('font-size') === '18px'; const paddingMatch = computedStyles.getPropertyValue('padding') === '10px 20px'; const borderMatch = computedStyles.getPropertyValue('border') === 'none'; const cursorMatch = computedStyles.getPropertyValue('cursor') === 'pointer'; return bgColorMatch && colorMatch && fontSizeMatch && paddingMatch && cursorMatch ? 'true' : 'false'; })();",
       "output": "true",
@@ -137,7 +151,9 @@
       },
       "name": "Style the sudoku with CSS",
       "feedback": "Please add a stylesheet in the sudoku.html file",
-      "urls": ["https://www.w3schools.com/css/css_howto.asp"],
+      "urls": [
+        "https://www.w3schools.com/css/css_howto.asp"
+      ],
       "file": "sudoku.html",
       "javascript": "(function() { const checkSolutionButton = document.getElementById('check-solution'); const hoverStyles = checkSolutionButton.style['hover'] || getComputedStyle(checkSolutionButton, ':hover'); const bgColorMatch = hoverStyles.getPropertyValue('background-color') === 'rgb(0, 140, 186)'; return bgColorMatch ? 'true' : 'false'; })();",
       "output": "true",
