@@ -2,10 +2,8 @@
 name: GitHub Classroom Workflow
 
 on:
-  push:
-    branches:
-      - main
-      - master
+  - push
+  - workflow_dispatch
 
 permissions:
   checks: write
